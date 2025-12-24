@@ -1,9 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    @apply font-sans text-primary-black bg-primary-white;
-  }
+@theme {
+  --color-primary-white: #FFFFFF;
+  --color-primary-black: #282828;
+  --color-secondary-gray: #6B6B6B;
+  --color-border-light: #E5E5E5;
+
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  color: var(--color-primary-black);
+  background-color: var(--color-primary-white);
 }
