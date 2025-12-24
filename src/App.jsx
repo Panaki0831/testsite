@@ -1,23 +1,13 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Service from './components/Service';
-import Works from './components/Works';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-
+// Temporarily simplified for debugging
 function App() {
   return (
-    <div className="overflow-x-hidden">
-      <Header />
-      <main>
-        <Hero />
-        <Service />
-        <Works />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="min-h-screen bg-white p-8">
+      <h1 className="text-4xl font-bold text-primary-black">
+        SAMURAI ARCHITECTS
+      </h1>
+      <p className="text-xl text-secondary-gray mt-4">
+        Test Page - TailwindCSS is working!
+      </p>
     </div>
   );
 }
